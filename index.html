@@ -9,8 +9,8 @@
         #player{
             width: 300px;
             height: 480px;
-            border-top: 30px groove red;
-            border-bottom: 30px ridge red;
+            border-top: 30px groove rgb(216, 26, 26);
+            border-bottom: 30px ridge rgb(216, 26, 26);
             border-radius: 30px;
             box-shadow: 0px 0px 10px #ddd;
             position: absolute;
@@ -88,7 +88,7 @@
             color: white;
         }
     </style>
-    <title>Document</title>
+    <title>Music_Player</title>
 </head>
 <body>
     <div id="player">
@@ -120,6 +120,7 @@
             input.type = "file";
             input.accept = "mp3";
             input.click();
+
             input.onchange = function(){
                 var song_name = this.files[0].name;
                 document.querySelector("#file-name").innerHTML = song_name;
